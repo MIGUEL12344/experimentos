@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../media/portada.jpg'); /* Ajusta la ruta si es necesario */
+    background-size: cover; /* Asegura que la imagen cubra el fondo */
+    background-position: center; /* Centra la imagen */
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+h1 {
+    margin-left: -60px; /* Ajusta este valor según sea necesario */
+    color: black;
+}
+
+.buttons {
+    flex: 2; /* Ocupa el espacio disponible a la izquierda */
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-left: 40px;
+}
+
+.button {
+    display: block; /* Mantener como bloque */
+    width: 150px; /* Ajusta el ancho a tu preferencia */
+    background-color: #00ff33;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0; /* Espacio vertical entre botones */
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none; /* Elimina el subrayado de enlaces */
+}
+
+.button:hover {
+    background-color: #000000; /* Color al pasar el mouse */
+}
+
+.image {
+    flex: 1; /* Ocupa el espacio disponible a la derecha */
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la derecha */
+}
+
+.image img {
+    width: 250px; /* O usa un porcentaje como 90% */
+    max-width: none; /* Esto permite que la imagen crezca sin límite */
+    height: auto; /* Mantiene la proporción */
+    margin-top: -10px; /* Ajusta la posición vertical */
+}
+

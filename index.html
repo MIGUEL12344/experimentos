@@ -3,48 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transporte Seguro</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background-image: url('imagen_web.jpg'); /* Cambia esta ruta por la de tu imagen */
-            background-size: cover;
-            background-position: center;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-            font-size: 1.2em;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .button:hover {
-            background-color: #0056b3; /* Color al pasar el mouse */
-        }
-    </style>
+    <title>Gestion de alimentos</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>Transporte Seguro</h1>
-    <a href="#informacion" class="button">Información</a>
-    <a href="#ubicacion" class="button">Ubicación</a>
-    <a href="https://wa.me/51921150948" class="button" target="_blank">WhatsApp</a>
+    <div class="container">
+        <div class="buttons">
+            <h1>Gestion de alimentos</h1>
+            <a href="#informacion" class="button">Información</a>
+            <a href="#ubicacion" class="button">Ubicación</a>
+            <a href="https://wa.me/51921150948" class="button" target="_blank">WhatsApp</a>
+        </div>
+        <div class="image">
+            <img src="../media/meme.jpg" alt="Descripción de la imagen">
+        </div>
+    </div>
 
     <section id="informacion" style="display:none;">
         <h2>Información</h2>
@@ -56,23 +29,6 @@
         <p>rata te crees</p>
     </section>
 
-    <script>
-        const buttons = document.querySelectorAll('.button');
-        buttons.forEach(button => {
-            button.addEventListener('click', (event) => {
-                const sectionId = event.target.getAttribute('href');
-                const sections = document.querySelectorAll('section');
-                sections.forEach(section => {
-                    section.style.display = 'none';
-                });
-                const activeSection = document.querySelector(sectionId);
-                if (activeSection) {
-                    activeSection.style.display = 'block';
-                }
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-
-
