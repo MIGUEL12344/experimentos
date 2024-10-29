@@ -55,7 +55,7 @@ h1 {
 }
 
 .image img {
-    width: 250px; /* O usa un porcentaje como 90% */
+    width: 400px; /* O usa un porcentaje como 90% */
     max-width: none; /* Esto permite que la imagen crezca sin límite */
     height: auto; /* Mantiene la proporción */
     margin-top: -10px; /* Ajusta la posición vertical */
